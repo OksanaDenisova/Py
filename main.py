@@ -30,6 +30,22 @@ def main():
     logger.info(f"Результат {calculator}: {result}")
 
 
+    operation =  Multiplication()
+    calculator = ComplexCalculator(operation)
+
+    result = calculator.calculate(num1, num2)
+
+    logger.info(f"Результат {calculator}: {result}")
+
+
+    operation =  Division()
+    calculator = ComplexCalculator(operation)
+
+    result = calculator.calculate(num1, num2)
+
+    logger.info(f"Результат {calculator}: {result}")
+
+
 if __name__ == "__main__":
     main()
 
