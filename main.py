@@ -22,28 +22,21 @@ def main():
 
     # Выбираем операцию, например, сложение
     operation = Addition()
-
     calculator = ComplexCalculator(operation)
-
     result = calculator.calculate(num1, num2)
-
-    logger.info(f"Результат {calculator}: {result}")
+    logger.info(f"Результат сложения : {result}")
 
 
     operation =  Multiplication()
     calculator = ComplexCalculator(operation)
-
     result = calculator.calculate(num1, num2)
-
-    logger.info(f"Результат {calculator}: {result}")
+    logger.info(f"Результат умножения : {result}")
 
 
     operation =  Division()
     calculator = ComplexCalculator(operation)
-
     result = calculator.calculate(num1, num2)
-
-    logger.info(f"Результат {calculator}: {result}")
+    logger.info(f"Результат деления : {result}")
 
 
 if __name__ == "__main__":
